@@ -1,0 +1,72 @@
+:root {
+  --white:        white;
+  --gray-10:      #F2F2F2;
+  --gray-30:      #CCCCCC;
+  --gray-70:      #333333;
+  --gray-80:      #1A1A1A;
+  --gray-90:      #0D0D0D;
+  --black:        black;
+  --gold-light:   #C7AD71;
+  --gold-dark:    #86754D;
+
+  --text-color:         var(--gray-70);
+  --minor-color:        var(--gold-dark);
+  --action-color:       var(--gold-light);
+  --active-color:       var(--gold-dark);
+  --scrim-color:        hsla(42, 27%, 15%, 0.33);
+  --sheet-color:        var(--white);
+  --background-color:   var(--gray-10);
+
+  --header-height:      24rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color:       var(--gray-30);
+    --sheet-color:      var(--gray-70);
+    --background-color: var(--gray-80);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.photo {
+}
+
+.photo img {
+  display: block;
+  margin: 10vh auto;
+  object-fit: contain;
+  aspect-ratio: 3 / 4.5;
+  width: 80%;
+  max-width: 400px;
+  max-height: 600px;
+  outline: 10px solid var(--gray-10);
+  box-shadow: var(--scrim-color) 0 5px 50px;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}
